@@ -14,14 +14,5 @@ jobs:
         with:
           fetch-depth: 0
       
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-      
-      - name: Set up environment variables
-        run: |
-          echo "GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
-      
       - name: Lint Code Base
         uses: github/super-linter@v4
