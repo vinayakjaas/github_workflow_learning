@@ -16,3 +16,8 @@ jobs:
       
       - name: Lint Code Base
         uses: github/super-linter@v4
+        env:
+          GITHUB_TOKEN: ${{ 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}}
+
+
+
